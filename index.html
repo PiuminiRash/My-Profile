@@ -3,157 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+  <link rel="stylesheet" href="Style/Navigation.css">
+<!--  <link rel="stylesheet" href="Footer.css">-->
+<!--  <link rel="stylesheet" href="Home.css">-->
+<!--  <link rel="stylesheet" href="ContactMe.css">-->
+  <link rel="stylesheet" href="Style/portfoio.css">
 </head>
 <body>
-<!--Navigation Bar-->
-<section>
-    <img src=".idea/assets/Batch.png" alt="mylogo">
-    <ul>
-        <li>Home</li>
-        <li>About me</li>
-        <li>Gallery</li>
-        <li>Contact me</li>
-        <li>Home</li>
-    </ul>
-</section>
+<header id="header">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <h1 class="logo"><a href="#">Piumini</a></h1>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="#Home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#About">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Contact">Contact Me</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-<!--Home-->
-<section>
-    <h6>Hello,I'm</h6>
-    <h1>Piumini Rashmika</h1>
-    <h3>A Student Of Insitute of software Engeeniring - IJSE</h3>
-    <button>Download CV</button>
-    <button>Contact Me</button><br>
-    <img src=".idea/assets/Home.jpg" alt="HomeImage" width="458" height="697">
-</section>
 
-<!--About-->
-<section>
-    <h3>About me</h3>
-    <h4>Driven by code, fueled by creativity</h4>
-    <p>I've been immersed in the world of software<br> engineering since 2023, passionately honing my<br> skills and knowledge. With a focus on Java, MySQL,<br> HTML, CSS, and JavaScript,<br><br>I thrive on crafting innovative solutions and pushing<br> the boundaries of technology. My journey as a<br> software engineer is driven by a relentless curiosity and a<br> commitment to continuous learning, as I strive to <br>contribute meaningfully to the ever-evolving landscape <br>of technology.</p>
-</section>
+  <div class="title" id="Home">
+    <img class="HomeImg" src="assets/Home.png">
+    <div class="background"></div>
+    <div><span class="typcn typcn-heart-outline icon heading"></span></div>
+    <h1 class="heading">Piumini Rashmika</h1>
+    <h2 class="heading">A Student Of Institute of software Engineering - IJSE</h2>
+    <a href="assets/IJSE.png"><button class="cvButton">Download CV</button></a>
+    <button class="contactButton">Contact Me</button>
+    <a class="smoothscroll" href="#about">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+    </a>
+    </div>
+    <div class="scroll-down"></div>
+  </header>
 
-<!--Service-->
-<section>
-    <h4>Why Choose Me ? </h4>
-    <h3>I'm here for whatever you<br>need</h3>
-    <img src="assets/FullStack.png" alt="Full Stack Image" width="50" height="50">
-    <h3>Full / Stack </h3>
-    <p>Full-Stack development<br>service delivers seamless<br>digital solutions from design<br>to development , ensuring<br>superlor performance and user experience</p>
-    <img src="assets/UI.png" alt="UI/UX Image" width="50" height="50">
-    <h3>UI / UX </h3>
-    <p>UI/UX development service<br>craft user-centric digital<br>experiences that captivate<br>and delight,driving business<br>success through intuitive<br>design</p>
-    <img src="assets/Web.png" alt="Web Develop Image" width="50" height="50">
-    <h3>Web</h3>
-    <p>Web development service<br>creates tailored online<br>solution,blending responsive<br>design and seamless<br>functionality to elevate your<br>brand's digital presence</p>
-</section>
-
-<!--My Process-->
-<section>
-    <h4>How It Works ?</h4>
-    <h3>The process operates efficiently , ensuring smooth workflow</h3>
-    <img src="assets/Shedual.png" alt="Schedule and time" width="50" height="50">
-    <h5>Schedule and time</h5>
-    <img src="assets/Web.png" alt="UI/UX Design" width="70" height="70">
-    <h5>UI/UX Design</h5>
-    <img src="assets/FrontEnd.png" alt="Front-End Develop" width="100" height="100">
-    <h5>Front-End Develop</h5>
-    <img src="assets/BackEnd.png" alt="Back-End Develop" width="50" height="50">
-    <h5>Back-End Develop</h5>
-    <img src="assets/QA.png" alt="Quality Assurance" width="70" height="70">
-    <h5>Quality Assurance</h5>
-    <img src="assets/Deployment.png" alt="Deployment" width="100" height="100">
-    <h5>Deployment</h5>
-</section>
-
-<!--Education-->
-<section>
-    <h4>What is Education Level ?</h4>
-    <h3>I have attained the following levels of education</h3>
-    <img src="assets/IJSE.png" alt="IJSE Logo" width="100" height="50">
-    <h4>Mahanama Collage Panadura</h4>
-    <button>View</button>
-    <img src="assets/IJSE.png" alt="IJSE Logo" width="100" height="50">
-    <h4>Collage Of Fast Track Learning</h4>
-    <button>View</button>
-    <img src="assets/IJSE.png" alt="IJSE Logo" width="100" height="50">
-    <h4>Institute Of Software Engineering</h4>
-    <button>View</button>
-    <img src="assets/IJSE.png" alt="IJSE Logo" width="100" height="50">
-    <h4>Cambridge Collage Of British English</h4>
-    <button>View</button>
-</section>
-
-<!--Skills-->
-<section>
-    <h4>What is My Skills ?</h4>
-    <h3>Dive into my skill set and unlock endless possibilities</h3>
-    <h5>Java</h5>
-    <h5>MySQL</h5>
-    <h5>HTML</h5>
-    <h5>CSS</h5>
-    <h5>Java Script</h5>
-    <h6>Years of Experience</h6>
-    <img src="assets/precent.jpg" alt="My Performence" width="400" height="400">
-    <img src="assets/Work.jpg" alt="Working" width="200" height="200">
-</section>
-
-<!--Project-->
-<section>
-    <h4>Project</h4>
-    <h3>Dive into my project <br>showcase.</h3>
-    <h5>CFTL Hostel Management Project</h5>
-    <p>CFTL is A/L camp for past & any age student.It has hostel facility and learning facility.You can see project documents and Figma design , template of the system.</p>
-    <h5> Note management page for campus</h5>
-    <p>This is a my campus note page.simple management system for me</p>
-    <button>see more</button>
-</section>
-
-<!--Assignment-->
-<section>
-    <h1>SEM O1</h1>
-    <h2>SEM O2</h2>
-    <h2>SEM O3</h2>
-</section>
-
-<!--Gallery-->
-<section>
-    <img src="assets/Sarry.jpg" alt="photo">
-    <img src="assets/IJSESet.jpg" alt="photo">
-    <img src="assets/Me.jpg" alt="photo">
-    <img src="assets/Batch.jpg" alt="photo">
-    <img src="assets/Present.jpg" alt="photo">
-    <img src="assets/Cetificate.jpg" alt="photo">
-    <img src="assets/CFTL.jpg" alt="photo">
-    <img src="assets/mee.jpg" alt="photo">
-    <img src="assets/Team.jpg" alt="photo">
-    <h1>50</h1>
-    <h4>See More</h4>
-</section>
-
-<!--Contact-->
-<section>
-    <h4>Let’s talk</h4>
-    <h6>Name</h6>
-    <h6>email</h6>
-    <h6>Message</h6>
-    <button>send</button>
-    <h6>Contact me :</h6>
-    <h6>piuminirashmika@gmail.com</h6>
-    <h6>+94766433312</h6>
-</section>
-
-<!--Footer-->
-<section>
-    <ul>
-        <li>Home</li>
-        <li>About me</li>
-        <li>Gallery</li>
-        <li>Contact me</li>
-        <li>Home</li>
-    </ul>
-    <p>Copyright©2024-piuminirashmika All Rights Reserved</p>
+<!-- About Section-->
+<section class="about" id="About">
+  <div class="container">
+    <div class="row">
+      <img class="aboutImg" src="assets/About.png">
+      <h4>About me</h4>
+      <h2>Driven by code, fueled by <br> creativity</h2>
+      <div class="block"></div>
+      <p>I've been immersed in the world of software engineering since 2023, passionately honing my skills and knowledge. With a focus on Java, MySQL, HTML, CSS, and JavaScript, <br><br>
+        I thrive on crafting innovative solutions and pushing the boundaries of technology. My journey as a software engineer is driven by a relentless curiosity and a commitment to continuous learning, as I strive to contribute meaningfully to the ever-evolving landscape of technology.</p>
+    </div>
+      </div>
 </section>
 </body>
 </html>
