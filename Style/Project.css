@@ -1,0 +1,116 @@
+.about .container:nth-child(6) {
+    background: #0E0E0E;
+    height: 150vh;
+}
+
+.about .container:nth-child(6) h4 {
+    left: 10%;
+    color: white;
+}
+
+.about .container:nth-child(6) h2 {
+    top: 10%;
+    left: 10%;
+    color: #ffa800;
+}
+
+.about .container:nth-child(6) .row:nth-child(1) {
+    position: absolute;
+    width: 60%;
+    height: 50vh;
+    background: #009688;
+    top: 18%;
+    left: 10%;
+}
+
+.about .container:nth-child(6) .row div {
+    overflow: hidden;
+    border-radius: 5% 5% 5% 5%;
+    position: absolute;
+    width: 40%;
+    height: 30vh;
+    top: 10%;
+    left: 5%;
+    background: #383636;
+}
+
+.about .container:nth-child(6) .row div img:nth-child(1){
+    rotate: -30deg;
+    right: -5%;
+    bottom: 5%;
+    position: absolute;
+    width: 30%;
+    height: 8vh;
+}
+
+.about .container:nth-child(6) .row div img:nth-child(2){
+    rotate: -30deg;
+    right: -8%;
+    bottom: 42%;
+    position: absolute;
+    width: 30%;
+    height: 8vh;
+}
+
+.about .container:nth-child(6) .row div img:nth-child(3){
+    rotate: -30deg;
+    right: 20%;
+    bottom: 17%;
+    position: absolute;
+    width: 30%;
+    height: 8vh;
+}
+
+.about .container:nth-child(6) .row div:nth-child(1) img:nth-child(4){
+    rotate: -30deg;
+    right: 48%;
+    bottom: -9%;
+    position: absolute;
+    width: 30%;
+    height: 8vh;
+}
+
+.about .container:nth-child(6) .row div:nth-child(1) img:nth-child(5){
+    rotate: -30deg;
+    right: -5%;
+    bottom: 73%;
+    position: absolute;
+    width: 30%;
+    height: 8vh;
+}
+
+.about .container:nth-child(6) .row div:nth-child(1) img:nth-child(6){
+    rotate: -30deg;
+    right: 23%;
+    bottom: 48%;
+    position: absolute;
+    width: 30%;
+    height: 8vh;
+}
+
+.about .container:nth-child(6) .row div:nth-child(1) img:nth-child(7){
+    rotate: -30deg;
+    right: 51%;
+    bottom: 23%;
+    position: absolute;
+    width: 30%;
+    height: 8vh;
+}
+
+.about .container:nth-child(6) .row div:nth-child(1) img:nth-child(8){
+    rotate: -30deg;
+    right: 79%;
+    bottom: -3%;
+    position: absolute;
+    width: 30%;
+    height: 8vh;
+}
+
+.about .container:nth-child(6) .row:nth-child(2) {
+    position: absolute;
+    width: 60%;
+    height: 50vh;
+    background: #009688;
+    top: 18%;
+    left: 10%;
+}

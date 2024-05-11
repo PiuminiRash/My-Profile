@@ -1,0 +1,65 @@
+/* About Section
+    ********************************************************************* */
+#about {
+    padding: 100px 0 50px 0;
+}
+
+
+.about .container:nth-child(1) {
+    background-color: #000000;
+}
+
+/*.container {*/
+/*    background : linear-gradient(272.8deg, #717171 4%, #000000 75%);*/
+/*}*/
+
+.container h4 {
+    color: #FFA800;
+    position: absolute;
+    /*right: 10%;*/
+    top: 7%;
+    /*text-align: right;*/
+    letter-spacing: 2px;
+}
+
+.container h2 {
+    color: #ffffff;
+    position: absolute;
+    /*right: 10%;*/
+    top: 15%;
+    /*text-align: right;*/
+    letter-spacing: 4px;
+    justify-content: space-between;
+}
+
+.about .container p {
+    position: absolute;
+    color: white;
+    /*right: 10%;*/
+    /*left: 60%;*/
+    top: 37%;
+    /*text-align: right;*/
+    letter-spacing: 2px;
+}
+
+.container .aboutImg {
+    width: 50%;
+    height: 100%;
+    bottom: 0;
+    top: 0;
+}
+.about .container:nth-child(1) h5 {
+    right: 10%;
+    text-align: right;
+}
+
+.about .container:nth-child(1) h2 {
+    text-align: right;
+    right: 10%;
+}
+
+.about .container:nth-child(1) p {
+    right: 10%;
+    left: 60%;
+    text-align: right;
+}

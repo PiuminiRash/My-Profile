@@ -1,0 +1,59 @@
+footer .container {
+    width: 100%;
+    height: 50vh;
+    background: #151515;
+    position: relative;
+}
+
+footer .col:nth-child(1) {
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    top: 20%;
+    left: 10%;
+}
+
+footer .col:nth-child(1) h2 {
+    position: absolute;
+    top : 5%
+}
+
+footer h2,p,a {
+    color: #FFFFFF;
+}
+
+footer ul li {
+    display: inline;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0 20px 0 20px;
+}
+
+footer .col:nth-child(2) {
+    position: absolute;
+    width: 30%;
+    height: 80%;
+    right: 10%;
+    top: 30%;
+}
+
+footer hr {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    left: 4%;
+    margin: 20px 0 20px 0;
+    border: 2px solid white;
+}
+
+footer .col:nth-child(2) p {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    text-align: left;
+}
+
+/*footer img {*/
+/*    width: 20%;*/
+/*    height: 30%;*/
+/*}*/

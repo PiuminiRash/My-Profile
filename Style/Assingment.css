@@ -1,0 +1,203 @@
+.about .container:nth-child(7) {
+    width: 100%;
+    height: 85vh;
+    /*text-align: center;*/
+    background: #151515;
+}
+
+.about .container:nth-child(7) h4 {
+    color: #ffa800;
+    top: 5%;
+    right: 10%;
+    text-align: right;
+}
+
+.about .container:nth-child(7) h2 {
+    color: #FFFFFF;
+    top: 10%;
+    /*text-align: right;*/
+    right: 10%;
+}
+
+/* for demo purposes */
+
+.card-block .btn-outline-primary {
+    width: 20%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    bottom: 20%;
+    left: 20%;
+    position: absolute;
+}
+
+.card {
+    margin: 20px 0;
+}
+
+/* Flip Cards CSS */
+.card-container {
+    perspective: 70px;
+}
+.card-flip {
+    position: relative;
+    width: 100%;
+    transform-style: preserve-3d;
+    height: auto;
+    transition: all 0.5s ease-out;
+    background: white;
+    border: none;
+}
+
+.card-flip div {
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    height: 20%;
+    width: 20%;
+    border: none;
+}
+
+.card-flip .front {
+    position: relative;
+    z-index: 1;
+}
+
+.card-flip .back {
+    position: relative;
+    z-index: 0;
+    transform: rotateY(-180deg);
+}
+
+.card-container:hover .card-flip {
+    transform: rotateY(180deg);
+}
+
+
+/*.about .container:nth-child(7) .row {*/
+/*    width: 80%;*/
+/*    height: 70%;*/
+/*    !*text-align: center;*!*/
+/*    position: absolute;*/
+/*    background: #009688;*/
+/*    top: 20%;*/
+/*    left: 10%;*/
+/*    !*background: #009688;*!*/
+/*    !*transform: translate(-50%, -50%);*!*/
+/*    !*overflow: hidden;*!*/
+/*}*/
+
+/*.about .container:nth-child(7) .row div:nth-child(1) {*/
+/*    background: black;*/
+/*    position: absolute;*/
+/*    width: 15%;*/
+/*    height: 70%;*/
+/*    top: 15%;*/
+/*    left: 25%;*/
+/*    border: 2px solid #70bee6;*/
+/*    border-radius: 5% 5% 5% 5%;*/
+/*}*/
+
+/*.about .container:nth-child(7) .card{*/
+/*    position: absolute;*/
+/*    top: 10%;*/
+/*    width: 25%;*/
+/*    height: 80%;*/
+/*    !*margin: 0 auto;*!*/
+/*    background: black;*/
+/*    transition: 0.5s;*/
+/*    display: inline-block;*/
+/*}*/
+
+/*.about .container:nth-child(7) .card:nth-child(1){*/
+/*    left: 10%;*/
+/*}*/
+
+/*.about .container:nth-child(7) .card:nth-child(2){*/
+/*    left: 40%;*/
+/*}*/
+
+/*.about .container:nth-child(7) .card:nth-child(3){*/
+/*    left: 70%;*/
+/*}*/
+
+
+/*.about .container:nth-child(7) .card:hover{*/
+/*    box-shadow: 0 30px 50px rgba(0,0,0,.2);*/
+/*}*/
+
+/*.about .container:nth-child(7) .card .face{*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    text-align: center;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.about .container:nth-child(7) .card .face.face1{*/
+/*    box-sizing: border-box;*/
+/*    padding: 20px;*/
+/*    text-align: center;*/
+/*    background: #000000;*/
+/*    color: #40A2E3;*/
+/*}*/
+/*.about .container:nth-child(7) .card .face.face1 h2{*/
+/*    margin-top: 30%;*/
+/*    margin-left: 10%;*/
+/*}*/
+
+/*.about .container:nth-child(7) .card .face.face1 ul{*/
+/*    margin-top: 70%;*/
+/*    color: white;*/
+/*    text-align: left;*/
+/*    margin-left: 18% ;*/
+/*}*/
+
+/*.about .container:nth-child(7) .card .content a {*/
+/*    border: 2px solid #40A2E3;*/
+/*    padding: 5px 10px;*/
+/*    position: absolute;*/
+/*    top: 85%;*/
+/*    left: 35%;*/
+/*}*/
+
+/*.about .container:nth-child(7) .card .content a:hover {*/
+/*    background: #0d84ce;*/
+/*    color: black;*/
+/*}*/
+
+/*.about .container:nth-child(7) .card .face.face2{*/
+/*    background: #40A2E3;*/
+/*    transition: 0.5s;*/
+/*}*/
+
+/*.about .container:nth-child(7) .card:hover .face.face2{*/
+/*    height: 80px;*/
+/*    width: 80px;*/
+/*    border-radius: 50%;*/
+/*    text-align: center;*/
+/*    top: 10%;*/
+/*    left: 50%;*/
+/*    transform: translateX(-50%);*/
+/*    background: transparent;*/
+/*    border:2px solid #40A2E3;*/
+/*}*/
+
+/*.about .container:nth-child(7) .card:hover .face.face2 h2{*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 15%;*/
+/*}*/
+
+/*.about .container:nth-child(7) .card .face.face2 h2{*/
+/*    margin-top: 25%;*/
+/*    padding: 7%;*/
+/*    font-size: 10em;*/
+/*    color: black;*/
+/*    transition: 0.5s;*/
+/*}*/
+
+/*.about .container:nth-child(7) .card:hover .face.face2 h2{*/
+/*    color: #40A2E3;*/
+/*    font-size: 2em;*/
+/*}*/
