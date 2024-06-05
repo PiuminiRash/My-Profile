@@ -1,0 +1,55 @@
+/*main {*/
+/*    padding: 5% 5% 5% 5%;*/
+/*    background: #001f2b;*/
+/*    text-align: center;*/
+/*}*/
+
+.container {
+    padding: 5% 5% 5% 5%;
+    background: #000000;
+    text-align: center;
+}
+
+.container .row {
+    text-align: left;
+    width: 96%;
+    height: 35vh;
+    background: #070707;
+    padding: 2% 2% 2% 2%;
+}
+
+.container .row>div:first-child>img {
+    width: 30%;
+    height: 100%;
+}
+
+.container .row h5{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+}
+
+.container .row p{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    letter-spacing: 1px;
+    text-align: left;
+    color: white;
+}
+
+.git{
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.view{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    letter-spacing: 1px;
+    text-align: left;
+}

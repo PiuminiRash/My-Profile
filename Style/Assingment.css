@@ -1,111 +1,341 @@
 .about .container:nth-child(7) {
-    width: 100%;
-    height: 85vh;
     /*text-align: center;*/
     background: #151515;
 }
 
 .about .container:nth-child(7) h4 {
     color: #ffa800;
-    top: 5%;
-    right: 10%;
     text-align: right;
 }
 
 .about .container:nth-child(7) h2 {
     color: #FFFFFF;
-    top: 10%;
-    /*text-align: right;*/
-    right: 10%;
+    text-align: right;
 }
 
-.about .container:nth-child(7) .row {
+.container:nth-child(7) .row {
+    position: absolute;
     display: flex;
-    width: 70%;
-    height: 70%;
-    top: 30%;
-    right: 20%;
     justify-content: space-between;
+}
+
+.about .container:nth-child(7) .card{
     position: absolute;
+    background: black;
+    transition: 0.5s;
+    display: inline-block;
 }
 
-.flip-card {
-    background-color: transparent;
-    width: 25%;
-    height: 80%;
-    perspective: 1000px;
+.about .container:nth-child(7) .card:hover{
+    /*box-shadow: 0 30px 50px rgba(0,0,0,.2);*/
+    transform: rotateY(360deg);
 }
 
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
+.about .container:nth-child(7) .card .face{
+    position: absolute;
     text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-}
-
-.flip-card:focus {
-    outline: 0;
-}
-
-.flip-card:hover .flip-card-inner, .flip-card:focus .flip-card-inner{
-    transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.flip-card-front {
-    background: linear-gradient(to left, #ffa800, #000000);
-    color: #fffdfd;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
     align-items: center;
 }
 
-.flip-card-back {
-    background: linear-gradient(to right, #ffa800, #fffdfd);
-    color: #000000;
-    transform: rotateY(180deg);
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.about .container:nth-child(7) .card .face.face1{
+    box-sizing: border-box;
+    text-align: center;
+    background: #000000;
+    color: #ffa800;
 }
 
-.flip-card h3 {
-    font-family: Verdana, sans-serif;
-    font-weight: bold;
-    color: #000000;
-}
-
-.flip-card ul li {
-    color: black;
+.about .container:nth-child(7) .card .face.face1 ul{
+    color: white;
     text-align: left;
 }
 
-.flip-card a {
-    color: black;
-    position: absolute;
-    bottom: 5%;
-    left: 30%;
+.about .container:nth-child(7) .card .content a {
     border: 2px solid #ffa800;
-    padding: 5px 10px;
+    color: #ffa800;
+    position: absolute;
 }
 
-/*.flip-card a:hover a {*/
-/*    background: #ffa800;*/
-/*}*/
-
-.about .container:nth-child(7) .row .flip-card a:hover {
-    background-color: #ffa800;
+.about .container:nth-child(7) .card .content a:hover {
+    background: #ffa800;
     color: black;
+}
+
+.about .container:nth-child(7) .card .face.face2{
+    background: #ffa800;
+    transition: 0.5s;
+}
+
+.about .container:nth-child(7) .card:hover .face.face2{
+    display: none;
+}
+
+.about .container:nth-child(7) .card:hover .face.face2 h2{
+    position: absolute;
+}
+
+.about .container:nth-child(7) .card .face.face2 h2{
+    color: black;
+}
+
+.about .container:nth-child(7) .card:hover .face.face2 h2{
+    display: none;
+}
+
+@media (max-width: 1500px) {
+    .about .container:nth-child(7) {
+        width: 100%;
+        height: 95vh;
+    }
+
+    .about .container:nth-child(7) h4 {
+        top: 5%;
+        right: 10%;
+    }
+
+    .about .container:nth-child(7) h2 {
+        top: 12%;
+        right: 10%;
+    }
+
+    .container:nth-child(7) .row {
+        flex-direction: row;
+        top: 25%;
+        right: 10%;
+        width: 80%;
+        height: 70%;
+    }
+
+    .about .container:nth-child(7) .card{
+        width: 25%;
+        height: 90%;
+        transition: 0.5s;
+    }
+
+    .about .container:nth-child(7) .card:nth-child(1){
+        left: 10%;
+    }
+
+    .about .container:nth-child(7) .card:nth-child(2){
+        left: 40%;
+    }
+
+    .about .container:nth-child(7) .card:nth-child(3){
+        left: 70%;
+    }
+
+    .about .container:nth-child(7) .card .face{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .about .container:nth-child(7) .card .face.face1{
+        padding: 20px;
+    }
+
+    .about .container:nth-child(7) .card .face.face1 .content h2{
+        margin-top: 0;
+        margin-right: 10%;
+    }
+
+    .about .container:nth-child(7) .card .face.face1 ul{
+        margin-top: 50%;
+        margin-left: 18% ;
+    }
+
+    .about .container:nth-child(7) .card .content a {
+        padding: 5px 10px;
+        top: 85%;
+        left: 35%;
+    }
+
+    .about .container:nth-child(7) .card .face.face2{
+        transition: 0.5s;
+    }
+
+    .about .container:nth-child(7) .card:hover .face.face2 h2{
+        top: 0;
+        left: 10%;
+    }
+
+    .about .container:nth-child(7) .card .face.face2 h2{
+        margin-top: 25%;
+        padding: 7%;
+        font-size: 10em;
+        transition: 0.5s;
+    }
+}
+
+@media (max-width: 1024px) {
+    .about .container:nth-child(7) {
+        width: 100%;
+        height: 90vh;
+    }
+
+    .about .container:nth-child(7) h4 {
+        top: 5%;
+        right: 10%;
+    }
+
+    .about .container:nth-child(7) h2 {
+        top: 12%;
+        right: 10%;
+    }
+
+    .container:nth-child(7) .row {
+        flex-direction: row;
+        top: 30%;
+        right: 10%;
+        width: 90%;
+        height: 60%;
+    }
+
+    .about .container:nth-child(7) .card{
+        width: 25%;
+        height: 90%;
+        transition: 0.5s;
+    }
+
+    .about .container:nth-child(7) .card:nth-child(1){
+        left: 10%;
+    }
+
+    .about .container:nth-child(7) .card:nth-child(2){
+        left: 40%;
+    }
+
+    .about .container:nth-child(7) .card:nth-child(3){
+        left: 70%;
+    }
+
+    .about .container:nth-child(7) .card .face{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .about .container:nth-child(7) .card .face.face1{
+        padding: 20px;
+    }
+
+    .about .container:nth-child(7) .card .face.face1 .content h2{
+        font-size: 2rem;
+        margin-top: 0;
+        margin-right: 10%;
+    }
+
+    .about .container:nth-child(7) .card .face.face1 ul{
+        margin-top: 50%;
+        margin-left: 18% ;
+    }
+
+    .about .container:nth-child(7) .card .content a {
+        padding: 5px 10px;
+        top: 85%;
+        left: 30%;
+    }
+
+    .about .container:nth-child(7) .card .face.face2{
+        transition: 0.5s;
+    }
+
+    .about .container:nth-child(7) .card:hover .face.face2 h2{
+        top: 0;
+        left: 10%;
+    }
+
+    .about .container:nth-child(7) .card .face.face2 h2{
+        margin-top: 15%;
+        padding: 5% 5% 5% 5%;
+        font-size: 10em;
+        transition: 0.5s;
+    }
+}
+
+@media (max-width: 768px) {
+    .about .container:nth-child(7) {
+        width: 100%;
+        height: 60vh;
+    }
+
+    .about .container:nth-child(7) h4 {
+        top: 5%;
+        right: 10%;
+    }
+
+    .about .container:nth-child(7) h2 {
+        top: 12%;
+        right: 10%;
+    }
+
+    .container:nth-child(7) .row {
+        flex-direction: column;
+        top: 25%;
+        right: 10%;
+        width: 90%;
+        height: 70%;
+    }
+
+    .about .container:nth-child(7) .card{
+        width: 25%;
+        height: 90%;
+        transition: 0.5s;
+    }
+
+    .about .container:nth-child(7) .card:nth-child(1){
+        left: 15%;
+    }
+
+    .about .container:nth-child(7) .card:nth-child(2){
+        left: 45%;
+    }
+
+    .about .container:nth-child(7) .card:nth-child(3){
+        left: 75%;
+    }
+
+    .about .container:nth-child(7) .card .face{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .about .container:nth-child(7) .card .face.face1{
+        padding: 20px;
+    }
+
+    .about .container:nth-child(7) .card .face.face1 .content h2{
+        margin-top: 0;
+        margin-right: 10%;
+    }
+
+    .about .container:nth-child(7) .card .face.face1 ul{
+        margin-top: 45%;
+        margin-left: 18% ;
+    }
+
+    .about .container:nth-child(7) .card .content a {
+        padding: 5px 10px;
+        top: 85%;
+        left: 25%;
+    }
+
+    .about .container:nth-child(7) .card .face.face2{
+        transition: 0.5s;
+    }
+
+    .about .container:nth-child(7) .card:hover .face.face2 h2{
+        top: 20%;
+        left: 10%;
+    }
+
+    .about .container:nth-child(7) .card .face.face2 h2{
+        margin-top: 40%;
+        padding: 7%;
+        font-size: 9rem;
+        transition: 0.5s;
+    }
 }

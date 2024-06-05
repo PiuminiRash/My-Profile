@@ -82,6 +82,21 @@ a {
     color: #FFA800;
 }
 
+nav ul li {
+    display: inline-block;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+nav ul a {
+    text-transform: uppercase;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    color: #CFCFCF;
+}
 /*.contact {*/
 /*    width: 100%;*/
 /*    height: 100%;*/

@@ -1,6 +1,7 @@
 .about .container:nth-child(6) {
-    background: #0E0E0E;
-    height: 150vh;
+    background: black;
+    height: 180vh;
+    padding: 22% 0 5% 0;
 }
 
 .about .container:nth-child(6) h4 {
@@ -9,108 +10,544 @@
 }
 
 .about .container:nth-child(6) h2 {
-    top: 10%;
+    top: 12%;
     left: 10%;
     color: #ffa800;
+    text-align: left;
 }
 
-.about .container:nth-child(6) .row:nth-child(1) {
-    position: absolute;
-    width: 60%;
-    height: 50vh;
-    background: #009688;
-    top: 18%;
+#work > section:nth-child(2) {
+    display: inline;
+}
+
+#games {
+    background: rgba(51, 57, 96, 0.1);
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+}
+
+#programming {
+    background: rgba(51, 57, 96, 0.1);
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+}
+
+#design {
+    background: rgba(51, 57, 96, 0.1);
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+}
+
+
+/* grid 1
+============================================ */
+.grid1 {
+    position: relative;
+    left: -3%;
+
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr 3fr 10fr;
+    width: 95%;
+}
+
+/*
+.grid1 > div {  !*<<<<<<<<<<< height manual *!
+    height: 60vh;
+}
+*/
+
+.grid1 > div:nth-child(1) {
+    background: rgba(51, 57, 96, 0.5);
+}
+
+.grid1 > div:nth-child(2) {
+    background: #14192B;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.grid1 > div:nth-child(3) {
+    align-self: center;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+}
+
+.grid1 > div:nth-child(3) > div:nth-child(1) {
+    display: flex;
+    align-items: center;
+
+    padding-left: 3%;
+}
+
+.grid1 > div:nth-child(3) > div:nth-child(2) {
+    background: rgb(255, 255, 255);
+}
+
+.grid1 > div:nth-child(3) > div:nth-child(2) > p {
+    padding-left: 3%;
+    padding-right: 3%;
+    line-height: 25px;
+}
+
+.grid1 > div:nth-child(3) > div:nth-child(2) dfn {
+    font-weight: bold;
+    font-style: normal;
+}
+
+.grid1 > div:nth-child(3) > div:nth-child(3) {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+#design .grid1 > div:nth-child(3) > div:nth-child(3) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid1 > div:nth-child(3) > div:nth-child(3) > div {
+    display: flex;
+    align-items: center;
+}
+
+.grid1 > div:nth-child(3) > div:nth-child(3) > div:nth-child(1) {
+    padding-left: 10%;
+}
+
+.grid1 > div:nth-child(3) > div:nth-child(3) > div:nth-child(2) > section {
+    display: flex;
+}
+
+/* grid 2 */
+.grid2-container {
+    display: flex;
+    justify-content: center;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    justify-content: center;
+    width: 80%;
+}
+
+.grid2 > div {
+    padding-bottom: 40px;
+}
+
+.grid2 > div > section > p {
+    font-size: 15px;
+}
+
+.grid2 > div > section > h5 {
+    font-size: 15px;
+    margin: 0;
+}
+
+.grid2 > div > section {
+    background: #ffca02;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid2 > div:nth-child(3){
+    /*background: #e7b609;*/
+    display: flex;
+    align-items: start;
+    justify-content: right;
+}
+
+.grid2 > div:nth-child(2) {
+    display: flex;
+    align-items: baseline;
+    justify-content: left;
+}
+
+/* design grid
+============================================ */
+.design-grid {
+    position: relative;
     left: 10%;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+
+    padding-bottom: 50px;
 }
 
-.about .container:nth-child(6) .row div {
-    overflow: hidden;
-    border-radius: 5% 5% 5% 5%;
-    position: absolute;
-    width: 40%;
-    height: 30vh;
-    top: 10%;
-    left: 5%;
-    background: #383636;
+.design-grid > section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
 }
 
-.about .container:nth-child(6) .row div img:nth-child(1){
-    rotate: -30deg;
-    right: -5%;
-    bottom: 5%;
-    position: absolute;
-    width: 30%;
-    height: 8vh;
+.custom-button {
+    font-size: small;
+    outline: none;
+    background-color: #000000;
+    color: white;
+    padding: 2px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 5px;
+    margin-right: 2px;
 }
 
-.about .container:nth-child(6) .row div img:nth-child(2){
-    rotate: -30deg;
-    right: -8%;
-    bottom: 42%;
-    position: absolute;
-    width: 30%;
-    height: 8vh;
+.custom-button:hover {
+    font-size: small;
+    outline: none;
+    background-color: #000000;
+    color: #ffca02;
+    padding: 2px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 5px;
+    margin-right: 2px;
 }
 
-.about .container:nth-child(6) .row div img:nth-child(3){
-    rotate: -30deg;
-    right: 20%;
-    bottom: 17%;
-    position: absolute;
-    width: 30%;
-    height: 8vh;
+.custom-button:hover {
+    background-color: #000000;
 }
 
-.about .container:nth-child(6) .row div:nth-child(1) img:nth-child(4){
-    rotate: -30deg;
-    right: 48%;
-    bottom: -9%;
-    position: absolute;
-    width: 30%;
-    height: 8vh;
+.custom-button:focus {
+    outline: none;
 }
 
-.about .container:nth-child(6) .row div:nth-child(1) img:nth-child(5){
-    rotate: -30deg;
-    right: -5%;
-    bottom: 73%;
+.about .container:nth-child(6)>a{
     position: absolute;
-    width: 30%;
-    height: 8vh;
+    color: #FFA800;
+    top: 90%;
+    left: 45%;
 }
 
-.about .container:nth-child(6) .row div:nth-child(1) img:nth-child(6){
-    rotate: -30deg;
-    right: 23%;
-    bottom: 48%;
-    position: absolute;
-    width: 30%;
-    height: 8vh;
+.img_gray {
+    filter: grayscale(1);
 }
 
-.about .container:nth-child(6) .row div:nth-child(1) img:nth-child(7){
-    rotate: -30deg;
-    right: 51%;
-    bottom: 23%;
-    position: absolute;
-    width: 30%;
-    height: 8vh;
+@media (max-width: 1500px) {
+    .about .container:nth-child(6) {
+        height: 180vh;
+        padding: 22% 0 5% 0;
+    }
+
+    .about .container:nth-child(6) h4 {
+        left: 10%;
+    }
+
+    .about .container:nth-child(6) h2 {
+        top: 12%;
+        left: 10%;
+    }
+
+    #games {
+        height: 100vh;
+    }
+
+    #programming {
+        height: 100vh;
+    }
+
+    #design {
+        height: 100vh;
+    }
+
+    .grid1 {
+        left: -3%;
+        grid-template-columns: 1fr 3fr 10fr;
+        width: 95%;
+    }
+
+    .grid1 > div:nth-child(3) {
+        grid-template-rows: 1fr 3fr 1fr;
+    }
+
+    .grid1 > div:nth-child(3) > div:nth-child(1) {
+        padding-left: 3%;
+    }
+
+    .grid1 > div:nth-child(3) > div:nth-child(2) > p {
+        padding-left: 3%;
+        padding-right: 3%;
+        line-height: 25px;
+    }
+
+    .grid1 > div:nth-child(3) > div:nth-child(3) > div:nth-child(1) {
+        padding-left: 10%;
+    }
+
+    .grid2 {
+        width: 80%;
+    }
+
+    .grid2 > div {
+        padding-bottom: 40px;
+    }
+
+    .grid2 > div > section > p {
+        font-size: 15px;
+    }
+
+    .grid2 > div > section > h5 {
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .grid2 > div > section {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .design-grid {
+        left: 10%;
+        width: 80%;
+        padding-bottom: 50px;
+    }
+
+    .custom-button {
+        padding: 2px 20px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        margin-bottom: 5px;
+        margin-right: 2px;
+    }
+
+    .custom-button:hover {
+        background-color: #000000;
+        color: #ffca02;
+        padding: 2px 20px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        margin-bottom: 5px;
+        margin-right: 2px;
+    }
+
+    .about .container:nth-child(6)>a{
+        top: 90%;
+        left: 45%;
+    }
 }
 
-.about .container:nth-child(6) .row div:nth-child(1) img:nth-child(8){
-    rotate: -30deg;
-    right: 79%;
-    bottom: -3%;
-    position: absolute;
-    width: 30%;
-    height: 8vh;
+@media (max-width: 1024px) {
+    .about .container:nth-child(6) {
+        height: 150vh;
+        padding: 28% 0 5% 0;
+    }
+
+    .about .container:nth-child(6) h4 {
+        left: 10%;
+        top: 5%;
+    }
+
+    .about .container:nth-child(6) h2 {
+        top: 10%;
+        left: 10%;
+    }
+
+    #games {
+        height: 100vh;
+    }
+
+    #programming {
+        height: 100vh;
+    }
+
+    #design {
+        height: 100vh;
+    }
+
+    .grid1 {
+        left: -3%;
+        grid-template-columns: 1fr 3fr 10fr;
+        width: 95%;
+    }
+
+    .grid1 > div:nth-child(3) {
+        grid-template-rows: 1fr 3fr 1fr;
+    }
+
+    .grid1 > div:nth-child(3) > div:nth-child(1) {
+        padding-left: 3%;
+    }
+
+    .grid1 > div:nth-child(3) > div:nth-child(2) > p {
+        padding-left: 3%;
+        padding-right: 3%;
+        line-height: 25px;
+    }
+
+    .grid1 > div:nth-child(3) > div:nth-child(3) > div:nth-child(1) {
+        padding-left: 10%;
+    }
+
+    .grid2 {
+        width: 80%;
+    }
+
+    .grid2 > div {
+        padding-bottom: 40px;
+    }
+
+    .grid2 > div > section > p {
+        font-size: 15px;
+    }
+
+    .grid2 > div > section > h5 {
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .grid2 > div > section {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .design-grid {
+        left: 10%;
+        width: 80%;
+        padding-bottom: 50px;
+    }
+
+    .custom-button {
+        padding: 2px 20px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        margin-bottom: 5px;
+        margin-right: 2px;
+    }
+
+    .custom-button:hover {
+        background-color: #000000;
+        color: #ffca02;
+        padding: 2px 20px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        margin-bottom: 5px;
+        margin-right: 2px;
+    }
+
+    .about .container:nth-child(6)>a{
+        top: 90%;
+        left: 45%;
+    }
 }
 
-.about .container:nth-child(6) .row:nth-child(2) {
-    position: absolute;
-    width: 60%;
-    height: 50vh;
-    background: #009688;
-    top: 18%;
-    left: 10%;
+@media (max-width: 768px) {
+    .about .container:nth-child(6) {
+        height: 80vh;
+        padding: 28% 0 5% 0;
+    }
+
+    .about .container:nth-child(6) h4 {
+        left: 10%;
+        top: 5%;
+    }
+
+    .about .container:nth-child(6) h2 {
+        top: 10%;
+        left: 10%;
+    }
+
+    #games {
+        height: 100vh;
+    }
+
+    #programming {
+        height: 100vh;
+    }
+
+    #design {
+        height: 100vh;
+    }
+
+    .grid1 {
+        left: -3%;
+        grid-template-columns: 1fr 3fr 10fr;
+        width: 95%;
+    }
+
+    .grid1 > div:nth-child(3) {
+        grid-template-rows: 1fr 3fr 1fr;
+    }
+
+    .grid1 > div:nth-child(3) > div:nth-child(1) {
+        padding-left: 3%;
+    }
+
+    .grid1 > div:nth-child(3) > div:nth-child(2) > p {
+        padding-left: 3%;
+        padding-right: 3%;
+        line-height: 25px;
+    }
+
+    .grid1 > div:nth-child(3) > div:nth-child(3) > div:nth-child(1) {
+        padding-left: 10%;
+    }
+
+    .grid2 {
+        width: 80%;
+    }
+
+    .grid2 > div {
+        padding-bottom: 40px;
+    }
+
+    .grid2 > div > section > p {
+        font-size: 15px;
+    }
+
+    .grid2 > div > section > h5 {
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .grid2 > div > section {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .design-grid {
+        left: 10%;
+        width: 80%;
+        padding-bottom: 50px;
+    }
+
+    .custom-button {
+        padding: 2px 20px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        margin-bottom: 5px;
+        margin-right: 2px;
+    }
+
+    .custom-button:hover {
+        background-color: #000000;
+        color: #ffca02;
+        padding: 2px 20px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        margin-bottom: 5px;
+        margin-right: 2px;
+    }
+
+    .about .container:nth-child(6)>a{
+        top: 90%;
+        left: 45%;
+    }
 }

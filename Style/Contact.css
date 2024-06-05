@@ -1,75 +1,319 @@
-.contact{
-    width: 100%;
-    height: 90vh;
+.contact .container{
     background: rgb(30,30,30);
     background: linear-gradient(0deg, rgba(30,30,30,1) 0%, rgba(255,168,0,1) 0%, rgba(0,0,0,1) 37%);
 }
 
-.secContact{
-    position: absolute;
+.contact .container h4{
+    position: relative;
     color: #fffdff;
-    font-size: 6rem;
-    top: 10%;
-    left: 10%;
 }
 
-.secContact>span{
+.contact .container h4 span{
     color: #FFA800;
-}
-
-#inst{
-    position: absolute;
-    width: 5%;
-    top: 9%;
-    right: 13%;
-}
-
-.git{
-    width: 4%;
-    height: 9%;
-    border-radius: 50%;
-    background: #FFFFFF;
-    position: absolute;
-    top: 10%;
-    right: 20%;
-}
-
-#git{
-    position: absolute;
-    width: 90%;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    margin: auto;
-}
-
-#link{
-    position: absolute;
-    width: 4%;
-    top: 10%;
-    right: 7%;
 }
 
 .contact>div.container>div:nth-child(3)>h4:first-child{
     position: absolute;
-    top: 70%;
-    right: 24%;
-    font-size: 2.5rem;
 }
 
-.piu{
-    position: absolute;
-    top:80%;
-    right: 5%;
-    font-size: 2rem;
-    letter-spacing: 2px;
+#Contact section:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
 }
 
-.phone{
+#Contact section:nth-child(2) > section {
+    display: grid;
+    grid-template-columns:  3fr 2fr;
+}
+
+#Contact aside {
+    background: #e7b609;
+}
+
+#Contact #contact_form {
+    display: flex;
+    flex-direction: column;
+}
+
+#Contact #contact_form input[type="text"],
+#Contact #contact_form input[type="email"],
+#Contact #contact_form textarea {
+    background: white;
+    opacity: 20%;
+    border: #ffffff solid 1px;
+}
+
+#Contact #contact_form button[type="submit"] {
+    background-color: black;
+    color: #e7b609;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#Contact_form button[type="submit"] a, #contact_form button[type="submit"] i {
+    font-style: normal;
+    font-weight: bold;
+    color: #e7b609;
+    text-decoration: none;
+}
+
+#Contact #contact_form button[type="submit"]:hover {
+    background-color: #e7b609;
+}
+
+#Contact #contact_form button a{
+    color: #ffffff;
+}
+
+#Contact #contact_form button a{
+    color: #FFA800;
+}
+
+#Contact #contact_info {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Contact #contact_info ul {
+    list-style: none;
     position: absolute;
-    top: 85%;
-    right: 17%;
-    font-size: 2rem;
-    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Contact_info p {
+    text-align: center;
+    color: white;
+}
+
+.contact .container p {
+    color: white;
+    position: absolute;
+}
+
+#Contact .container div a{
+    position: absolute;
+    color: white;
+}
+
+@media (max-width: 1500px) {
+    .contact .container{
+        width: 100%;
+        height: 100vh;
+        padding: 5% 5% 5% 10%;
+    }
+
+    .contact .container h4{
+        font-size: 6rem;
+        left: 0;
+    }
+
+    .contact>div.container>div:nth-child(3)>h4:first-child{
+        top: 70%;
+        right: 24%;
+        font-size: 2.5rem;
+    }
+
+    #Contact section:nth-child(2) {
+        margin-top: 80px;
+    }
+
+    #Contact section:nth-child(2) > section {
+        column-gap: 50px;
+        width: 80%;
+    }
+
+    #Contact #contact_form {
+        width: 40%;
+        height: 80%;
+    }
+
+    #Contact #contact_form label {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    #Contact #contact_form input[type="text"],
+    #Contact #contact_form input[type="email"],
+    #Contact #contact_form textarea {
+        width: 80%;
+        height: 20%;
+        opacity: 20%;
+    }
+
+    #Contact #contact_form textarea {
+        height: 150px;
+    }
+
+    #Contact #contact_form button[type="submit"] {
+        padding: 2% 2%;
+        width: 30%;
+        letter-spacing: 2px;
+    }
+
+    .contact .container p {
+        font-size: 20px;
+        right: 20%;
+        bottom: 20%;
+    }
+
+    #Contact .container div a:first-child{
+        right: 10%;
+        bottom: 15%;
+    }
+
+    #Contact .container div a:last-child{
+        right: 16%;
+        bottom: 10%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .contact .container{
+        width: 100%;
+        height: 100vh;
+        padding: 5% 5% 5% 10%;
+    }
+
+    .contact .container h4{
+        font-size: 6rem;
+        left: 0;
+    }
+
+    .contact>div.container>div:nth-child(3)>h4:first-child{
+        top: 70%;
+        right: 24%;
+        font-size: 2.5rem;
+    }
+
+    #Contact section:nth-child(2) {
+        margin-top: 80px;
+    }
+
+    #Contact section:nth-child(2) > section {
+        column-gap: 50px;
+        width: 80%;
+    }
+
+    #Contact #contact_form {
+        width: 40%;
+        height: 80%;
+    }
+
+    #Contact #contact_form label {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    #Contact #contact_form input[type="text"],
+    #Contact #contact_form input[type="email"],
+    #Contact #contact_form textarea {
+        width: 80%;
+        height: 20%;
+        opacity: 20%;
+    }
+
+    #Contact #contact_form textarea {
+        height: 150px;
+    }
+
+    #Contact #contact_form button[type="submit"] {
+        padding: 2% 2%;
+        width: 30%;
+        letter-spacing: 2px;
+    }
+
+    .contact .container p {
+        font-size: 20px;
+        right: 20%;
+        bottom: 20%;
+    }
+
+    #Contact .container div a:first-child{
+        right: 10%;
+        bottom: 15%;
+    }
+
+    #Contact .container div a:last-child{
+        right: 16%;
+        bottom: 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact .container{
+        width: 100%;
+        height: 100vh;
+        padding: 5% 5% 5% 10%;
+    }
+
+    .contact .container h4{
+        font-size: 6rem;
+        left: 0;
+    }
+
+    .contact>div.container>div:nth-child(3)>h4:first-child{
+        top: 70%;
+        right: 24%;
+        font-size: 2.5rem;
+    }
+
+    #Contact section:nth-child(2) {
+        margin-top: 80px;
+    }
+
+    #Contact section:nth-child(2) > section {
+        column-gap: 50px;
+        width: 80%;
+    }
+
+    #Contact #contact_form {
+        width: 50%;
+        height: 60%;
+    }
+
+    #Contact #contact_form label {
+        color: white;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    #Contact #contact_form input[type="text"],
+    #Contact #contact_form input[type="email"],
+    #Contact #contact_form textarea {
+        width: 80%;
+        height: 10%;
+        opacity: 20%;
+    }
+
+    #Contact #contact_form textarea {
+        height: 150px;
+    }
+
+    #Contact #contact_form button[type="submit"] {
+        padding: 2% 2%;
+        width: 30%;
+        letter-spacing: 2px;
+    }
+
+    .contact .container p {
+        font-size: 20px;
+        right: 30%;
+        bottom: 20%;
+    }
+
+    #Contact .container div a:first-child{
+        right: 10%;
+        bottom: 15%;
+    }
+
+    #Contact .container div a:last-child{
+        right: 21%;
+        bottom: 10%;
+    }
 }
