@@ -19,62 +19,46 @@ $(document).ready(function () {
     // initialize wow.js
     new WOW().init();
 
-    // Push the body and the nav over by 285px over
+    // Push the body and the nav over by 285px
     var main = function () {
         $(".fa-bars").click(function () {
             $(".nav-screen").animate(
-                {
-                    right: "0px"
-                },
+                { right: "0px" },
                 200
             );
-
             $("body").animate(
-                {
-                    right: "285px"
-                },
+                { right: "285px" },
                 200
             );
         });
 
-        // Then push them back */
+        // Then push them back
         $(".fa-times").click(function () {
             $(".nav-screen").animate(
-                {
-                    right: "-285px"
-                },
+                { right: "-285px" },
                 200
             );
-
             $("body").animate(
-                {
-                    right: "0px"
-                },
+                { right: "0px" },
                 200
             );
         });
 
         $(".nav-links a").click(function () {
             $(".nav-screen").animate(
-                {
-                    right: "-285px"
-                },
+                { right: "-285px" },
                 500
             );
-
             $("body").animate(
-                {
-                    right: "0px"
-                },
+                { right: "0px" },
                 500
             );
         });
     };
 
-    $(document).ready(main);
+    main();
 
     // initiate full page scroll
-
     $("#fullpage").fullpage({
         scrollBar: true,
         responsiveWidth: 400,
@@ -87,9 +71,9 @@ $(document).ready(function () {
         afterLoad: function (anchorLink, index) {
             var loadedSection = $(this);
 
-            //using index
+            // using index
             if (index == 1) {
-                /* add opacity to arrow */
+                // add opacity to arrow
                 $(".fa-chevron-down").each(function () {
                     $(this).css("opacity", "1");
                 });
@@ -104,18 +88,13 @@ $(document).ready(function () {
                 $(".header-links").css("background-color", "white");
             }
 
-            //using index
+            // animate skill bars
             if (index == 2) {
-                /* animate skill bars */
                 $(".skillbar").each(function () {
-                    $(this)
-                        .find(".skillbar-bar")
-                        .animate(
-                            {
-                                width: $(this).attr("data-percent")
-                            },
-                            2500
-                        );
+                    $(this).find(".skillbar-bar").animate(
+                        { width: $(this).attr("data-percent") },
+                        2500
+                    );
                 });
             }
         }
@@ -140,79 +119,64 @@ $(document).ready(function () {
     });
 
     // smooth scrolling
-    $(function () {
-        $("a[href*=#]:not([href=#])").click(function () {
-            if (
-                location.pathname.replace(/^\//, "") ==
-                this.pathname.replace(/^\//, "") &&
-                location.hostname == this.hostname
-            ) {
-                var target = $(this.hash);
-                target = target.length
-                    ? target
-                    : $("[name=" + this.hash.slice(1) + "]");
-                if (target.length) {
-                    $("html,body").animate(
-                        {
-                            scrollTop: target.offset().top
-                        },
-                        700
-                    );
-                    return false;
-                }
+    $("a[href*=#]:not([href=#])").click(function () {
+        if (
+            location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") &&
+            location.hostname == this.hostname
+        ) {
+            var target = $(this.hash);
+            target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
+            if (target.length) {
+                $("html,body").animate(
+                    { scrollTop: target.offset().top },
+                    700
+                );
+                return false;
             }
-        });
+        }
     });
 
-    //ajax form
-    $(function () {
-        // Get the form.
-        var form = $("#ajax-contact");
+    // ajax form
+    var form = $("#ajax-contact");
+    var formMessages = $("#form-messages");
 
-        // Get the messages div.
-        var formMessages = $("#form-messages");
+    $(form).submit(function (e) {
+        // Stop the browser from submitting the form.
+        e.preventDefault();
 
-        // Set up an event listener for the contact form.
-        $(form).submit(function (e) {
-            // Stop the browser from submitting the form.
-            e.preventDefault();
+        // Serialize the form data.
+        var formData = $(form).serialize();
 
-            // Serialize the form data.
-            var formData = $(form).serialize();
+        // Submit the form using AJAX.
+        $.ajax({
+            type: "POST",
+            url: $(form).attr("action"),
+            data: formData
+        })
+            .done(function (response) {
+                // Make sure that the formMessages div has the 'success' class.
+                $(formMessages).removeClass("error");
+                $(formMessages).addClass("success");
 
-            // Submit the form using AJAX.
-            $.ajax({
-                type: "POST",
-                url: $(form).attr("action"),
-                data: formData
+                // Set the message text.
+                $(formMessages).text(response);
+
+                // Clear the form.
+                $("#name").val("");
+                $("#email").val("");
+                $("#message").val("");
             })
-                .done(function (response) {
-                    // Make sure that the formMessages div has the 'success' class.
-                    $(formMessages).removeClass("error");
-                    $(formMessages).addClass("success");
+            .fail(function (data) {
+                // Make sure that the formMessages div has the 'error' class.
+                $(formMessages).removeClass("success");
+                $(formMessages).addClass("error");
 
-                    // Set the message text.
-                    $(formMessages).text(response);
-
-                    // Clear the form.
-                    $("#name").val("");
-                    $("#email").val("");
-                    $("#message").val("");
-                })
-                .fail(function (data) {
-                    // Make sure that the formMessages div has the 'error' class.
-                    $(formMessages).removeClass("success");
-                    $(formMessages).addClass("error");
-
-                    // Set the message text.
-                    if (data.responseText !== "") {
-                        $(formMessages).text(data.responseText);
-                    } else {
-                        $(formMessages).text(
-                            "Oops! An error occured and your message could not be sent."
-                        );
-                    }
-                });
-        });
+                // Set the message text.
+                if (data.responseText !== "") {
+                    $(formMessages).text(data.responseText);
+                } else {
+                    $(formMessages).text("Oops! An error occurred and your message could not be sent.");
+                }
+            });
     });
 });
