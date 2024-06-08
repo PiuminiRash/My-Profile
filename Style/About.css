@@ -185,3 +185,54 @@
         left: 50%;
     }
 }
+
+@media (max-width: 425px) {
+    #about {
+        padding: 100px 0 50px 0;
+    }
+
+    .about .container:nth-child(1) {
+        height: 60vh;
+    }
+
+    .about .container:nth-child(1) .row{
+        height: 100%;
+    }
+
+    .container h4 {
+        right: 10%;
+        top: 5%;
+        letter-spacing: 2px;
+    }
+
+    .container h2 {
+        top: 10%;
+        letter-spacing: 2px;
+    }
+
+    .about .container p {
+        top: 25%;
+        letter-spacing: 1px;
+    }
+
+    .container .aboutImg {
+        width: 65%;
+        height: 100%;
+        bottom: 0;
+        top: 0;
+    }
+
+    .about .container:nth-child(1) h5 {
+        text-align: center;
+        right: 10%;
+    }
+
+    .about .container:nth-child(1) h2 {
+        right: 10%;
+    }
+
+    .about .container:nth-child(1) p {
+        right: 10%;
+        left: 10%;
+    }
+}
