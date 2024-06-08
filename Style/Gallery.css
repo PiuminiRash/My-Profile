@@ -1,13 +1,30 @@
+.gallery .container:nth-child(1) {
+    background: black;
+    height: 110vh;
+}
+
+.gallery .container:nth-child(1) h4 {
+    left: 10%;
+    color: white;
+}
+
+.gallery .container:nth-child(1) h2 {
+    top: 15%;
+    left: 10%;
+    color: #ffa800;
+    text-align: left;
+}
+
 .image-wrapper{
     position: absolute;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 1em;
     transition: all 400ms;
-    width: 85%;
-    height: 65%;
+    width: 75%;
+    height: 55%;
     top: 30%;
-    left: 7%;
+    left: 10%;
 }
 .container:hover .box {
     filter: grayscale(100%) opacity(24%);
