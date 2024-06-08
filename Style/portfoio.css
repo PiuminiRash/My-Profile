@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300");
+/*@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300");*/
 
 html {
     font-size: 62.5%;
@@ -85,10 +85,10 @@ a:hover {
 /**********************************************************************
 Header Section
 ***********************************************************************/
-.logo{
-    width: 100px;
-    margin-left: 10px;
-}
+/*.logo{*/
+/*    width: 100px;*/
+/*    margin-left: 10px;*/
+/*}*/
 .logo:hover{
     animation-name: myLogo;
     animation-duration: 3s;
