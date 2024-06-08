@@ -6,9 +6,10 @@
   <meta name="keywords" content="piumini rashmika software engineer fullstack developer programming frontend developer ui/ux designer">
   <meta name="author" content="Piumini Rashmika">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Title</title>
+  <title>Piumini Rashmika|Student Of Software Engineering</title>
 
   <link rel="stylesheet" href="Style/Navigation.css">
+  <link rel="stylesheet" href="Style/Side-Nav.css">
   <link rel="stylesheet" href="Style/Home.css">
   <link rel="stylesheet" href="Style/About.css">
   <link rel="stylesheet" href="Style/Why_Choose_Me.css">
@@ -23,12 +24,11 @@
   <link rel="stylesheet" href="Style/portfoio.css">
 </head>
 <body>
-
 <header id="header">
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
     <h1 class="logo"><a href="#">Piumini</a></h1>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+<!--      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>-->
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link " aria-current="page" href="#Home">Home</a>
@@ -117,7 +117,7 @@
 <!--Education-->
   <div class="container">
     <h4>What is Education Laval ?</h4>
-    <h2>I have attained the following levels <br>of education</h2>
+    <h2>I have attained the following levels of education</h2>
     <div class="row">
       <div class="col-sm-4 text-left">
         <div class="education-block">
@@ -154,10 +154,10 @@
     </div>
   </div>
 
-  <!--  Skill-->
+<!--Skill-->
   <div class="container">
     <h4>What is My Skills ?</h4>
-    <h2>Dive into my skill set and unlock <br>endless possibilities</h2>
+    <h2>Dive into my skill set and unlock endless possibilities</h2>
     <img class="skillBImg" src="assets/image/SkillPhoto-2.png">
     <img class="skillSImg" src="assets/image/SkillPhoto-1.png">
     <div class="row">
@@ -198,6 +198,7 @@
     </div>
   </div>
 
+<!--Project-->
 <div class="container">
   <h4>Project</h4>
   <h2>Dive into my project <br> showcase.</h2>
@@ -256,7 +257,7 @@
       </div>
     </section>
   </div>
-  <a href="Project/index.html">See more->></a>
+  <a href="Project/project.html">See more->></a>
 </div>
 
 <!--Assingment-->
@@ -325,14 +326,16 @@
 </section>
 
 <!--Gallery-->
-<section>
+<section class="gallery" id="Gallery">
   <div class="container">
+    <h4>Gallery</h4>
+    <h2>Dive into my project showcase.</h2>
     <div class="image-wrapper">
       <div class="box box-1" style="background-image: url('assets/image/Sarry.jpg');"></div>
-      <div class="box box-2" style="background-image: url('assets/image/Sarry.jpg');"></div>
-      <div class="box box-3" style="background-image: url('assets/image/Sarry.jpg');"></div>
-      <div class="box box-4" style="background-image: url('assets/image/Sarry.jpg');"></div>
-      <div class="box box-5" style="background-image: url('assets/image/Sarry.jpg');"></div>
+      <div class="box box-2" style="background-image: url('assets/image/saree.jpg');"></div>
+      <div class="box box-3" style="background-image: url('assets/image/couple.jpg');"></div>
+      <div class="box box-4" style="background-image: url('assets/image/white.jpg');"></div>
+      <div class="box box-5" style="background-image: url('assets/image/yellow.jpg');"></div>
     </div>
   </div>
 </section>
@@ -365,7 +368,6 @@
   </div>
 </section>
 
-
 <!-- Footer -->
 <footer>
   <div class="container">
@@ -390,9 +392,22 @@
     </div>
   </div>
 </footer>
+
+<div class="side-nav">
+  <a href="#Home"><div id="nav-link-1" data-section="Home"></div></a>
+  <a href="#About"><div id="nav-link-2" data-section="About"></div></a>
+  <a href="#Gallery"><div id="nav-link-3" data-section="Gallery"></div></a>
+  <a href="#Contact"><div id="nav-link-4" data-section="Contact"></div></a>
+</div>
+
 </body>
+
 <!-- font-awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
       integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<script src="assets/jquery-3.7.1.min.js"></script>
+<script src="JS/sample.js"></script>
+
 </html>
