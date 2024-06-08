@@ -321,17 +321,17 @@ header .HomeImg {
     }
 
     .title .cvButton {
-        top: 80%;
+        top: 77%;
         left: 10%;
-        width: 120px;
-        height: 30px;
+        width: 90px;
+        height: 20px;
     }
 
     .title .contactButton {
-        top: 80%;
-        left: 30%;
-        width: 120px;
-        height: 30px;
+        top: 77%;
+        left: 35%;
+        width: 90px;
+        height: 20px;
     }
 
     .title .smallsep {
@@ -342,22 +342,22 @@ header .HomeImg {
         margin-bottom: 30px;
     }
     .title h1 {
-        font-size: 50px;
+        font-size: 30px;
         font-weight: 300;
         line-height: 0.85;
         margin-bottom: 0;
         margin-left: 0;
         left: 10%;
-        top: 70%;
+        top: 65%;
         margin: 0;
         padding: 0;
     }
 
     .title h2 {
-        font-size: 12px;
+        font-size: 10px;
         font-weight: 400;
         left: 10%;
-        top: 73%;
+        top: 68%;
         letter-spacing: 5px;
         margin-top: 5%;
     }
