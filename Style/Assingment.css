@@ -170,7 +170,7 @@
 @media (max-width: 1024px) {
     .about .container:nth-child(7) {
         width: 100%;
-        height: 150vh;
+        height: 85vh;
     }
 
     .about .container:nth-child(7) h4 {
@@ -179,16 +179,16 @@
     }
 
     .about .container:nth-child(7) h2 {
-        top: 8%;
+        top: 12%;
         right: 10%;
     }
 
     .container:nth-child(7) .row {
         flex-direction: row;
-        top: 30%;
+        top: 25%;
         right: 10%;
         width: 90%;
-        height: 60%;
+        height: 70%;
     }
 
     .about .container:nth-child(7) .card{
@@ -212,8 +212,8 @@
     .about .container:nth-child(7) .card .face{
         top: 0;
         left: 0;
-        width: 30%;
-        height: 30%;
+        width: 100%;
+        height: 100%;
     }
 
     .about .container:nth-child(7) .card .face.face1{
@@ -221,20 +221,19 @@
     }
 
     .about .container:nth-child(7) .card .face.face1 .content h2{
-        font-size: 2rem;
         margin-top: 0;
-        margin-right: 10%;
+        margin-right: 0;
     }
 
     .about .container:nth-child(7) .card .face.face1 ul{
-        margin-top: 50%;
+        margin-top: 60%;
         margin-left: 18% ;
     }
 
     .about .container:nth-child(7) .card .content a {
         padding: 5px 10px;
         top: 85%;
-        left: 30%;
+        left: 29%;
     }
 
     .about .container:nth-child(7) .card .face.face2{
@@ -247,8 +246,8 @@
     }
 
     .about .container:nth-child(7) .card .face.face2 h2{
-        margin-top: 15%;
-        padding: 5% 5% 5% 5%;
+        margin-top: 25%;
+        padding: 7%;
         font-size: 10em;
         transition: 0.5s;
     }
