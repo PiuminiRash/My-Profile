@@ -274,7 +274,7 @@
 
     #Contact #contact_form {
         width: 50%;
-        height: 60%;
+        height: 90%;
     }
 
     #Contact #contact_form label {
@@ -315,5 +315,77 @@
     #Contact .container div a:last-child{
         right: 21%;
         bottom: 10%;
+    }
+}
+@media (max-width: 425px) {
+    .contact .container{
+        width: 100%;
+        height: 100vh;
+        padding: 5% 5% 5% 10%;
+    }
+
+    .contact .container h4{
+        font-size: 3rem;
+        left: 0;
+    }
+
+    .contact>div.container>div:nth-child(3)>h4:first-child{
+        top: 70%;
+        right: 24%;
+        font-size: 2.5rem;
+    }
+
+    #Contact section:nth-child(2) {
+        margin-top: 80px;
+    }
+
+    #Contact section:nth-child(2) > section {
+        column-gap: 50px;
+        width: 80%;
+    }
+
+    #Contact #contact_form {
+        width: 80%;
+        height: 60%;
+    }
+
+    #Contact #contact_form label {
+        color: white;
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    #Contact #contact_form input[type="text"],
+    #Contact #contact_form input[type="email"],
+    #Contact #contact_form textarea {
+        width: 80%;
+        height: 10%;
+        opacity: 20%;
+    }
+
+    #Contact #contact_form textarea {
+        height: 150px;
+    }
+
+    #Contact #contact_form button[type="submit"] {
+        padding: 2% 2%;
+        width: 30%;
+        letter-spacing: 2px;
+    }
+
+    .contact .container p {
+        font-size: 20px;
+        right: 30%;
+        bottom: 20%;
+    }
+
+    #Contact .container div a:first-child{
+        right: 3%;
+        bottom: 18%;
+    }
+
+    #Contact .container div a:last-child{
+        right: 23%;
+        bottom: 12%;
     }
 }
