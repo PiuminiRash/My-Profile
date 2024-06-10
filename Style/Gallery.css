@@ -1,16 +1,12 @@
 .gallery .container:nth-child(1) {
     background: black;
-    height: 110vh;
 }
 
 .gallery .container:nth-child(1) h4 {
-    left: 10%;
     color: white;
 }
 
 .gallery .container:nth-child(1) h2 {
-    top: 15%;
-    left: 10%;
     color: #ffa800;
     text-align: left;
 }
@@ -21,11 +17,8 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 1em;
     transition: all 400ms;
-    width: 75%;
-    height: 55%;
-    top: 30%;
-    left: 10%;
 }
+
 .container:hover .box {
     filter: grayscale(100%) opacity(24%);
 }
@@ -87,6 +80,93 @@
 
 .box:hover::after {
     transform: translateY(0);
-    opacity: 1;
-    transition-delay: 400ms;
+}
+
+@media (max-width: 1500px) {
+    .gallery .container:nth-child(1) {
+        height: 110vh;
+    }
+
+    .gallery .container:nth-child(1) h4 {
+        left: 10%;
+    }
+
+    .gallery .container:nth-child(1) h2 {
+        top: 15%;
+        left: 10%;
+    }
+
+    .image-wrapper{
+        width: 75%;
+        height: 55%;
+        top: 30%;
+        left: 10%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .gallery .container:nth-child(1) {
+        height: 100vh;
+    }
+
+    .gallery .container:nth-child(1) h4 {
+        left: 10%;
+    }
+
+    .gallery .container:nth-child(1) h2 {
+        top: 15%;
+        left: 10%;
+    }
+
+    .image-wrapper{
+        width: 75%;
+        height: 55%;
+        top: 30%;
+        left: 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery .container:nth-child(1) {
+        height: 100vh;
+    }
+
+    .gallery .container:nth-child(1) h4 {
+        left: 10%;
+    }
+
+    .gallery .container:nth-child(1) h2 {
+        top: 15%;
+        left: 10%;
+    }
+
+    .image-wrapper{
+        width: 75%;
+        height: 55%;
+        top: 30%;
+        left: 10%;
+    }
+}
+
+@media (max-width: 425px) {
+    .gallery .container:nth-child(1) {
+        height: 50vh;
+    }
+
+    .gallery .container:nth-child(1) h4 {
+        left: 10%;
+    }
+
+    .gallery .container:nth-child(1) h2 {
+        top: 12%;
+        left: 10%;
+    }
+
+    .image-wrapper{
+        grid-template-rows: 10fr 0fr 1fr 1fr 5fr;
+        width: 75%;
+        height: 80%;
+        top: 40%;
+        left: 10%;
+    }
 }
