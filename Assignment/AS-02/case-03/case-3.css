@@ -1,0 +1,92 @@
+div.input{
+    width: 20%;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    border: 10px solid grey;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: fixed;
+}
+div.input>div{
+    width: 19%;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    border: 10px solid red;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+.section-1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.section-1 > div {
+    background-color: rebeccapurple;
+    width: 18%;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 200%;
+}
+.section-2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 200vh;
+    overflow: hidden;
+
+}
+.section-2>div{
+    background-color: blue;
+    width: 18%;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    position: sticky;
+    top: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 200%;
+}
+.section-3{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 200vh;
+    overflow: hidden;
+
+}
+.section-3>div{
+    background-color: yellowgreen;
+    width: 18%;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    position: sticky;
+    top: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 200%;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animation-06</title>
+
+  <style>
+
+    :root{
+      --width: 200px;
+    }
+
+    body{
+      overflow: hidden;
+    }
+
+    div{
+      width: var(--width);
+      aspect-ratio: 2/1;
+
+      animation-duration:8s;
+      animation-name:anim;
+      animation-iteration-count:infinite;
+      background-color: red;
+      border-radius: 15%;
+      animation-play-state: running;
+      /* animation-timing-function: ease-in;*/
+    }
+
+    @keyframes anim {
+      0%{
+        margin-left: 0;
+        margin-top: 0;
+      }
+
+      25%{
+        margin-left: calc(100vw - var(--width));
+        margin-top: 0;
+        background-color: purple;
+        transform: rotate(180deg);
+      }
+
+      50%{
+        margin-left: calc(100vw - var(--width));
+        margin-top: calc(55vw - var(--width));
+        background-color: black;
+        transform: rotate(360deg);
+      }
+
+      75%{
+        margin-left: 0;
+        margin-top: calc(55vw - var(--width));
+        background-color: yellow;
+        transform: rotate(180deg);
+      }
+    }
+
+  </style>
+
+
+</head>
+<body>
+
+<div></div>
+
+</body>
+</html>

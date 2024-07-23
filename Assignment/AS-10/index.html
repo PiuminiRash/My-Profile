@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+  <style>
+    body {
+      margin: auto;
+      padding: 100px;
+      font-family: 'Titillium Web', sans-serif;
+      /*background-image: url("https://i.gifer.com/V7tx.gif");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;*/
+      overflow: hidden;
+    }
+    #bg-video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+    }
+
+    h1 {
+      text-align: center;
+      padding-bottom: 50px;
+    }
+    .calculator {
+      background: linear-gradient(45deg, #282828, #0c0c0c);
+      width: 360px;
+      height: 500px;
+      margin: auto;
+      border-radius: 2px;
+
+    }
+
+    .display {
+      width: 340px;
+      height: 100px;
+      padding: 3px;
+      margin: auto;
+      font-size: 30px;
+      text-align: right;
+      color: white;
+
+
+    }
+
+    .buttons {
+      margin: 10px;
+      padding: 10px;
+    }
+
+    #clear, #zero {
+      width: 156px;
+      height: 65px;
+      border: 2px solid white;
+    }
+
+    #percent, #divide, #seven, #eight, #nine, #multiply, #four, #five, #six, #subtract, #one, #two, #three, #add, #equals, #decimal {
+      width: 76px;
+      height: 65px;
+      margin-bottom: 5px;
+      /*border-radius: 50%;*/
+      border: 2px solid white;
+    }
+
+    button {
+      font-size: 18px;
+      cursor: pointer;
+      background: rgba(250, 250, 250, 0.01);
+      color: white;
+      border: 1px solid #282828;
+      font-weight: 100;
+      font-family: 'Titillium Web', sans-serif;
+    }
+    button:hover {
+      background: rgba(250, 250, 250, 0.3);
+    }
+
+    .sign {
+      background: rgba(250, 250, 250, 0.1);
+
+    }
+  </style>
+</head>
+<body>
+<section>
+  <video id="bg-video" autoplay loop muted>
+    <source src="assets/854569-hd_1920_1080_25fps.mp4" type="video/mp4">
+  </video>
+  <div class="calculator">
+    <div class="wrapper">
+      <div class="display" id="display">
+      </div>
+      <div class="buttons">
+        <button id="clear" class="sign">C</button>
+        <button id="percent" class="sign">%</button>
+        <button id="divide" class="sign">/</button>
+        <button id="seven">7</button>
+        <button id="eight">8</button>
+        <button id="nine">9</button>
+        <button id="multiply" class="sign">x</button>
+        <button id="four">4</button>
+        <button id="five">5</button>
+        <button id="six">6</button>
+        <button id="subtract" class="sign">-</button>
+        <button id="one">1</button>
+        <button id="two">2</button>
+        <button id="three">3</button>
+        <button id="add" class="sign">+</button>
+        <button id="zero">0</button>
+        <button id="decimal">.</button>
+        <button id="equals" class="sign">=</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script src="../AS-09/jquery-3.7.1.min.js"></script>
+<script>
+  $(document).ready(function(){
+    var result=0;
+    var prevEntry = 0;
+    var operation=null;
+    var currentEntry ="0";
+    updateScreen(result);
+
+    $('button').click(function(e) {
+      var btnPressed = e.target.innerHTML;
+      console.log(btnPressed);
+
+      if (btnPressed === 'C') {
+        result = 0;
+        currentEntry = '0';
+      }
+      else if (btnPressed === '.') {
+        if (currentEntry.indexOf(".") ===-1) {
+          currentEntry +='.'}
+      }
+      else if(isNumber(btnPressed)) {
+        if (currentEntry === '0')
+          currentEntry = btnPressed;
+        else currentEntry = currentEntry + btnPressed;
+
+
+      }
+      else if (isOperator(btnPressed)) {
+
+        if (currentEntry==="" && prevEntry!==0) {
+          operation = btnPressed;
+        }
+        else {
+          prevEntry = currentEntry;
+          operation = btnPressed;
+          currentEntry = '';}
+        console.log('curr', currentEntry );
+      }
+      else if (btnPressed === '%') {
+        currentEntry = currentEntry/100;
+      }
+
+      else if (btnPressed === '=') {
+        currentEntry = operate(prevEntry, currentEntry, operation);
+        operation = null;
+      }
+      updateScreen(currentEntry);
+    });
+  });
+
+  updateScreen = function(displayValue) {
+    var displayValue = displayValue.toString();
+    $('.display').html(displayValue.substring(0,10));
+  }
+
+  isNumber = function(value) {
+    return !isNaN(value);
+  }
+
+  isOperator = function(value) {
+    return value === "/" || value === "x" || value === "+" || value === "-" ;
+  };
+
+  operate = function(a, b, operation) {
+    a = parseFloat(a);
+    b = parseFloat(b);
+    console.log(a, b, operation)
+    if (operation === "+") {
+      return a + b;
+    }
+    if (operation === "-") {
+      return a - b;
+    }
+    if (operation === "x") {
+      return a * b;
+    }
+    if (operation === "/") {
+      return a / b;
+    }
+  }
+
+
+
+
+</script>
+</body>
+</html>

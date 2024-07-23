@@ -38,6 +38,10 @@ footer .col:nth-child(2) p {
     text-align: left;
 }
 
+address{
+    color: white;
+}
+
 @media (max-width: 1500px) {
     footer .container {
         width: 100%;

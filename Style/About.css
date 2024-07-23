@@ -142,7 +142,7 @@
     }
 
     .about .container:nth-child(1) {
-        height: 60vh;
+        height: 80vh;
     }
 
     .about .container:nth-child(1) .row{
@@ -218,6 +218,105 @@
     .container .aboutImg {
         width: 65%;
         height: 100%;
+        bottom: 0;
+        top: 0;
+    }
+
+    .about .container:nth-child(1) h5 {
+        text-align: center;
+        right: 10%;
+    }
+
+    .about .container:nth-child(1) h2 {
+        right: 10%;
+    }
+
+    .about .container:nth-child(1) p {
+        right: 10%;
+        left: 10%;
+    }
+}
+@media (max-width: 375px) {
+    #about {
+        padding: 100px 0 50px 0;
+    }
+
+    .about .container:nth-child(1) {
+        height: 60vh;
+    }
+
+    .about .container:nth-child(1) .row{
+        height: 100%;
+    }
+
+    .container h4 {
+        right: 10%;
+        top: 5%;
+        letter-spacing: 2px;
+    }
+
+    .container h2 {
+        top: 10%;
+        letter-spacing: 2px;
+    }
+
+    .about .container p {
+        top: 25%;
+    }
+
+    .container .aboutImg {
+        width: 90%;
+        height: 100%;
+        bottom: 0;
+        top: 0;
+    }
+
+    .about .container:nth-child(1) h5 {
+        text-align: center;
+        right: 10%;
+    }
+
+    .about .container:nth-child(1) h2 {
+        right: 10%;
+    }
+
+    .about .container:nth-child(1) p {
+        right: 10%;
+        left: 10%;
+    }
+}
+@media (max-width: 320px) {
+    #about {
+        padding: 100px 0 50px 0;
+    }
+
+    .about .container:nth-child(1) {
+        height: 60vh;
+    }
+
+    .about .container:nth-child(1) .row{
+        height: 100%;
+    }
+
+    .container h4 {
+        right: 10%;
+        top: 5%;
+        letter-spacing: 2px;
+    }
+
+    .container h2 {
+        top: 10%;
+        letter-spacing: 2px;
+    }
+
+    .about .container p {
+        top: 30%;
+        letter-spacing: 0;
+    }
+
+    .container .aboutImg {
+        width: 90%;
+        height: 80%;
         bottom: 0;
         top: 0;
     }

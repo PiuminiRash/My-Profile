@@ -1,103 +1,103 @@
-.about .container:nth-child(7) {
+.about .container:nth-child(6) {
     /*text-align: center;*/
     background: #151515;
 }
 
-.about .container:nth-child(7) h4 {
+.about .container:nth-child(6) h4 {
     color: #ffa800;
     text-align: right;
 }
 
-.about .container:nth-child(7) h2 {
+.about .container:nth-child(6) h2 {
     color: #FFFFFF;
     text-align: right;
 }
 
-.container:nth-child(7) .row {
+.container:nth-child(6) .row {
     position: absolute;
     display: flex;
     justify-content: space-between;
 }
 
-.about .container:nth-child(7) .card{
+.about .container:nth-child(6) .card{
     position: absolute;
     background: black;
     transition: 0.5s;
     display: inline-block;
 }
 
-.about .container:nth-child(7) .card:hover{
+.about .container:nth-child(6) .card:hover{
     /*box-shadow: 0 30px 50px rgba(0,0,0,.2);*/
     transform: rotateY(360deg);
 }
 
-.about .container:nth-child(7) .card .face{
+.about .container:nth-child(6) .card .face{
     position: absolute;
     text-align: center;
     align-items: center;
 }
 
-.about .container:nth-child(7) .card .face.face1{
+.about .container:nth-child(6) .card .face.face1{
     box-sizing: border-box;
     text-align: center;
     background: #000000;
     color: #ffa800;
 }
 
-.about .container:nth-child(7) .card .face.face1 ul{
+.about .container:nth-child(6) .card .face.face1 ul{
     color: white;
     text-align: left;
 }
 
-.about .container:nth-child(7) .card .content a {
+.about .container:nth-child(6) .card .content a {
     border: 2px solid #ffa800;
     color: #ffa800;
     position: absolute;
 }
 
-.about .container:nth-child(7) .card .content a:hover {
+.about .container:nth-child(6) .card .content a:hover {
     background: #ffa800;
     color: black;
 }
 
-.about .container:nth-child(7) .card .face.face2{
+.about .container:nth-child(6) .card .face.face2{
     background: #ffa800;
     transition: 0.5s;
 }
 
-.about .container:nth-child(7) .card:hover .face.face2{
+.about .container:nth-child(6) .card:hover .face.face2{
     display: none;
 }
 
-.about .container:nth-child(7) .card:hover .face.face2 h2{
+.about .container:nth-child(6) .card:hover .face.face2 h2{
     position: absolute;
 }
 
-.about .container:nth-child(7) .card .face.face2 h2{
+.about .container:nth-child(6) .card .face.face2 h2{
     color: black;
 }
 
-.about .container:nth-child(7) .card:hover .face.face2 h2{
+.about .container:nth-child(6) .card:hover .face.face2 h2{
     display: none;
 }
 
 @media (max-width: 1500px) {
-    .about .container:nth-child(7) {
+    .about .container:nth-child(6) {
         width: 100%;
         height: 95vh;
     }
 
-    .about .container:nth-child(7) h4 {
+    .about .container:nth-child(6) h4 {
         top: 5%;
         right: 10%;
     }
 
-    .about .container:nth-child(7) h2 {
+    .about .container:nth-child(6) h2 {
         top: 12%;
         right: 10%;
     }
 
-    .container:nth-child(7) .row {
+    .container:nth-child(6) .row {
         flex-direction: row;
         top: 25%;
         right: 10%;
@@ -105,61 +105,61 @@
         height: 70%;
     }
 
-    .about .container:nth-child(7) .card{
+    .about .container:nth-child(6) .card{
         width: 25%;
         height: 90%;
         transition: 0.5s;
     }
 
-    .about .container:nth-child(7) .card:nth-child(1){
+    .about .container:nth-child(6) .card:nth-child(1){
         left: 10%;
     }
 
-    .about .container:nth-child(7) .card:nth-child(2){
+    .about .container:nth-child(6) .card:nth-child(2){
         left: 40%;
     }
 
-    .about .container:nth-child(7) .card:nth-child(3){
+    .about .container:nth-child(6) .card:nth-child(3){
         left: 70%;
     }
 
-    .about .container:nth-child(7) .card .face{
+    .about .container:nth-child(6) .card .face{
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
     }
 
-    .about .container:nth-child(7) .card .face.face1{
+    .about .container:nth-child(6) .card .face.face1{
         padding: 20px;
     }
 
-    .about .container:nth-child(7) .card .face.face1 .content h2{
+    .about .container:nth-child(6) .card .face.face1 .content h2{
         margin-top: 0;
         margin-right: 10%;
     }
 
-    .about .container:nth-child(7) .card .face.face1 ul{
+    .about .container:nth-child(6) .card .face.face1 ul{
         margin-top: 50%;
         margin-left: 18% ;
     }
 
-    .about .container:nth-child(7) .card .content a {
+    .about .container:nth-child(6) .card .content a {
         padding: 5px 10px;
         top: 85%;
         left: 35%;
     }
 
-    .about .container:nth-child(7) .card .face.face2{
+    .about .container:nth-child(6) .card .face.face2{
         transition: 0.5s;
     }
 
-    .about .container:nth-child(7) .card:hover .face.face2 h2{
+    .about .container:nth-child(6) .card:hover .face.face2 h2{
         top: 0;
         left: 10%;
     }
 
-    .about .container:nth-child(7) .card .face.face2 h2{
+    .about .container:nth-child(6) .card .face.face2 h2{
         margin-top: 25%;
         padding: 7%;
         font-size: 10em;
@@ -168,22 +168,22 @@
 }
 
 @media (max-width: 1024px) {
-    .about .container:nth-child(7) {
+    .about .container:nth-child(6) {
         width: 100%;
         height: 85vh;
     }
 
-    .about .container:nth-child(7) h4 {
+    .about .container:nth-child(6) h4 {
         top: 5%;
         right: 10%;
     }
 
-    .about .container:nth-child(7) h2 {
+    .about .container:nth-child(6) h2 {
         top: 12%;
         right: 10%;
     }
 
-    .container:nth-child(7) .row {
+    .container:nth-child(6) .row {
         flex-direction: row;
         top: 25%;
         right: 10%;
@@ -191,61 +191,61 @@
         height: 70%;
     }
 
-    .about .container:nth-child(7) .card{
+    .about .container:nth-child(6) .card{
         width: 25%;
         height: 90%;
         transition: 0.5s;
     }
 
-    .about .container:nth-child(7) .card:nth-child(1){
+    .about .container:nth-child(6) .card:nth-child(1){
         left: 10%;
     }
 
-    .about .container:nth-child(7) .card:nth-child(2){
+    .about .container:nth-child(6) .card:nth-child(2){
         left: 40%;
     }
 
-    .about .container:nth-child(7) .card:nth-child(3){
+    .about .container:nth-child(6) .card:nth-child(3){
         left: 70%;
     }
 
-    .about .container:nth-child(7) .card .face{
+    .about .container:nth-child(6) .card .face{
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
     }
 
-    .about .container:nth-child(7) .card .face.face1{
+    .about .container:nth-child(6) .card .face.face1{
         padding: 20px;
     }
 
-    .about .container:nth-child(7) .card .face.face1 .content h2{
+    .about .container:nth-child(6) .card .face.face1 .content h2{
         margin-top: 0;
         margin-right: 0;
     }
 
-    .about .container:nth-child(7) .card .face.face1 ul{
+    .about .container:nth-child(6) .card .face.face1 ul{
         margin-top: 60%;
         margin-left: 18% ;
     }
 
-    .about .container:nth-child(7) .card .content a {
+    .about .container:nth-child(6) .card .content a {
         padding: 5px 10px;
         top: 85%;
         left: 29%;
     }
 
-    .about .container:nth-child(7) .card .face.face2{
+    .about .container:nth-child(6) .card .face.face2{
         transition: 0.5s;
     }
 
-    .about .container:nth-child(7) .card:hover .face.face2 h2{
+    .about .container:nth-child(6) .card:hover .face.face2 h2{
         top: 0;
         left: 10%;
     }
 
-    .about .container:nth-child(7) .card .face.face2 h2{
+    .about .container:nth-child(6) .card .face.face2 h2{
         margin-top: 25%;
         padding: 7%;
         font-size: 10em;
@@ -254,22 +254,22 @@
 }
 
 @media (max-width: 768px) {
-    .about .container:nth-child(7) {
+    .about .container:nth-child(6) {
         width: 100%;
         height: 90vh;
     }
 
-    .about .container:nth-child(7) h4 {
+    .about .container:nth-child(6) h4 {
         top: 5%;
         right: 10%;
     }
 
-    .about .container:nth-child(7) h2 {
+    .about .container:nth-child(6) h2 {
         top: 10%;
         right: 10%;
     }
 
-    .container:nth-child(7) .row {
+    .container:nth-child(6) .row {
         flex-direction: column;
         top: 20%;
         right: 10%;
@@ -277,61 +277,61 @@
         height: 80%;
     }
 
-    .about .container:nth-child(7) .card{
+    .about .container:nth-child(6) .card{
         width: 27%;
         height: 90%;
         transition: 0.5s;
     }
 
-    .about .container:nth-child(7) .card:nth-child(1){
+    .about .container:nth-child(6) .card:nth-child(1){
         left: 15%;
     }
 
-    .about .container:nth-child(7) .card:nth-child(2){
+    .about .container:nth-child(6) .card:nth-child(2){
         left: 45%;
     }
 
-    .about .container:nth-child(7) .card:nth-child(3){
+    .about .container:nth-child(6) .card:nth-child(3){
         left: 75%;
     }
 
-    .about .container:nth-child(7) .card .face{
+    .about .container:nth-child(6) .card .face{
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
     }
 
-    .about .container:nth-child(7) .card .face.face1{
+    .about .container:nth-child(6) .card .face.face1{
         padding: 20px;
     }
 
-    .about .container:nth-child(7) .card .face.face1 .content h2{
+    .about .container:nth-child(6) .card .face.face1 .content h2{
         margin-top: 0;
         margin-right: 10%;
     }
 
-    .about .container:nth-child(7) .card .face.face1 ul{
+    .about .container:nth-child(6) .card .face.face1 ul{
         margin-top: 45%;
         margin-left: 18% ;
     }
 
-    .about .container:nth-child(7) .card .content a {
+    .about .container:nth-child(6) .card .content a {
         padding: 5px 10px;
         top: 85%;
         left: 25%;
     }
 
-    .about .container:nth-child(7) .card .face.face2{
+    .about .container:nth-child(6) .card .face.face2{
         transition: 0.5s;
     }
 
-    .about .container:nth-child(7) .card:hover .face.face2 h2{
+    .about .container:nth-child(6) .card:hover .face.face2 h2{
         top: 20%;
         left: 10%;
     }
 
-    .about .container:nth-child(7) .card .face.face2 h2{
+    .about .container:nth-child(6) .card .face.face2 h2{
         margin-top: 40%;
         padding: 7%;
         font-size: 9rem;
@@ -340,22 +340,22 @@
 }
 
 @media (max-width: 425px) {
-    .about .container:nth-child(7) {
+    .about .container:nth-child(6) {
         width: 100%;
         height: 180vh;
     }
 
-    .about .container:nth-child(7) h4 {
+    .about .container:nth-child(6) h4 {
         top: 2%;
         right: 10%;
     }
 
-    .about .container:nth-child(7) h2 {
+    .about .container:nth-child(6) h2 {
         top: 4%;
         right: 10%;
     }
 
-    .container:nth-child(7) .row {
+    .container:nth-child(6) .row {
         flex-direction: row;
         top: 8%;
         left: 25%;
@@ -363,70 +363,254 @@
         height: 80%;
     }
 
-    .about .container:nth-child(7) .card{
+    .about .container:nth-child(6) .card{
         width: 100%;
         height: 30%;
         transition: 0.5s;
     }
 
-    .about .container:nth-child(7) .card:nth-child(1){
+    .about .container:nth-child(6) .card:nth-child(1){
         top: 0;
         left: 0;
     }
 
-    .about .container:nth-child(7) .card:nth-child(2){
+    .about .container:nth-child(6) .card:nth-child(2){
         top: 40%;
         left: 0;
     }
 
-    .about .container:nth-child(7) .card:nth-child(3){
+    .about .container:nth-child(6) .card:nth-child(3){
         top: 80%;
         left: 0;
     }
 
-    .about .container:nth-child(7) .card .face{
+    .about .container:nth-child(6) .card .face{
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
     }
 
-    .about .container:nth-child(7) .card .face.face1{
+    .about .container:nth-child(6) .card .face.face1{
         padding: 20px;
     }
 
-    .about .container:nth-child(7) .card .face.face1 .content h2{
+    .about .container:nth-child(6) .card .face.face1 .content h2{
         font-size: 2rem;
         margin-top: 0;
         margin-right: 18%;
     }
 
-    .about .container:nth-child(7) .card .face.face1 ul{
+    .about .container:nth-child(6) .card .face.face1 ul{
         font-size: 12px;
         margin-top: 20%;
         margin-left: 18% ;
     }
 
-    .about .container:nth-child(7) .card .content a {
+    .about .container:nth-child(6) .card .content a {
         padding: 5px 5px;
         font-size: 12px;
         top: 80%;
         left: 30%;
     }
 
-    .about .container:nth-child(7) .card .face.face2{
+    .about .container:nth-child(6) .card .face.face2{
         transition: 0.5s;
     }
 
-    .about .container:nth-child(7) .card:hover .face.face2 h2{
+    .about .container:nth-child(6) .card:hover .face.face2 h2{
         top: 0;
         left: 10%;
     }
 
-    .about .container:nth-child(7) .card .face.face2 h2{
+    .about .container:nth-child(6) .card .face.face2 h2{
         margin-top: 15%;
         padding: 5% 5% 5% 5%;
         font-size: 10em;
+        transition: 0.5s;
+    }
+}
+
+@media (max-width: 375px) {
+    .about .container:nth-child(6) {
+        width: 100%;
+        height: 180vh;
+    }
+
+    .about .container:nth-child(6) h4 {
+        top: 2%;
+        right: 10%;
+    }
+
+    .about .container:nth-child(6) h2 {
+        top: 4%;
+        right: 10%;
+    }
+
+    .container:nth-child(6) .row {
+        flex-direction: row;
+        top: 10%;
+        left: 25%;
+        width: 50%;
+        height: 80%;
+    }
+
+    .about .container:nth-child(6) .card{
+        width: 100%;
+        height: 30%;
+        transition: 0.5s;
+    }
+
+    .about .container:nth-child(6) .card:nth-child(1){
+        top: 0;
+        left: 0;
+    }
+
+    .about .container:nth-child(6) .card:nth-child(2){
+        top: 40%;
+        left: 0;
+    }
+
+    .about .container:nth-child(6) .card:nth-child(3){
+        top: 80%;
+        left: 0;
+    }
+
+    .about .container:nth-child(6) .card .face{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .about .container:nth-child(6) .card .face.face1{
+        padding: 20px;
+    }
+
+    .about .container:nth-child(6) .card .face.face1 .content h2{
+        font-size: 1.7rem;
+        margin-top: 0;
+        margin-right: 15%;
+    }
+
+    .about .container:nth-child(6) .card .face.face1 ul{
+        font-size: 12px;
+        margin-top: 20%;
+        margin-left: 18% ;
+    }
+
+    .about .container:nth-child(6) .card .content a {
+        padding: 5px 5px;
+        font-size: 12px;
+        top: 80%;
+        left: 30%;
+    }
+
+    .about .container:nth-child(6) .card .face.face2{
+        transition: 0.5s;
+    }
+
+    .about .container:nth-child(6) .card:hover .face.face2 h2{
+        top: 0;
+        left: 8%;
+    }
+
+    .about .container:nth-child(6) .card .face.face2 h2{
+        margin-top: 30%;
+        padding: 5% 5% 5% 5%;
+        font-size: 7em;
+        transition: 0.5s;
+    }
+}
+
+@media (max-width: 320px) {
+    .about .container:nth-child(6) {
+        width: 100%;
+        height: 180vh;
+    }
+
+    .about .container:nth-child(6) h4 {
+        top: 2%;
+        right: 10%;
+    }
+
+    .about .container:nth-child(6) h2 {
+        top: 4%;
+        right: 10%;
+    }
+
+    .container:nth-child(6) .row {
+        flex-direction: row;
+        top: 10%;
+        left: 25%;
+        width: 50%;
+        height: 80%;
+    }
+
+    .about .container:nth-child(6) .card{
+        width: 100%;
+        height: 30%;
+        transition: 0.5s;
+    }
+
+    .about .container:nth-child(6) .card:nth-child(1){
+        top: 0;
+        left: 0;
+    }
+
+    .about .container:nth-child(6) .card:nth-child(2){
+        top: 40%;
+        left: 0;
+    }
+
+    .about .container:nth-child(6) .card:nth-child(3){
+        top: 80%;
+        left: 0;
+    }
+
+    .about .container:nth-child(6) .card .face{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .about .container:nth-child(6) .card .face.face1{
+        padding: 20px;
+    }
+
+    .about .container:nth-child(6) .card .face.face1 .content h2{
+        font-size: 1.7rem;
+        margin-top: 0;
+        margin-right: 15%;
+    }
+
+    .about .container:nth-child(6) .card .face.face1 ul{
+        font-size: 12px;
+        margin-top: 20%;
+        margin-left: 18% ;
+    }
+
+    .about .container:nth-child(6) .card .content a {
+        padding: 5px 5px;
+        font-size: 12px;
+        top: 80%;
+        left: 30%;
+    }
+
+    .about .container:nth-child(6) .card .face.face2{
+        transition: 0.5s;
+    }
+
+    .about .container:nth-child(6) .card:hover .face.face2 h2{
+        top: 0;
+        left: 10%;
+    }
+
+    .about .container:nth-child(6) .card .face.face2 h2{
+        margin-top: 30%;
+        padding: 5% 5% 5% 5%;
+        font-size: 6.5em;
         transition: 0.5s;
     }
 }

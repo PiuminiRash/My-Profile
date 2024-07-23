@@ -1,25 +1,25 @@
-.about .container:nth-child(4) {
+.about .container:nth-child(3) {
     background-color: black;
 }
 
-.about .container:nth-child(4) h2 {
+.about .container:nth-child(3) h2 {
     position: absolute;
-    text-align: left;
+    text-align: right;
 }
 
-.about .container:nth-child(4) h4 {
+.about .container:nth-child(3) h4 {
     color: #ffa800;
     position: absolute;
 }
 
-.about .container:nth-child(4) h4 {
-    left: 10%;
+.about .container:nth-child(3) h4 {
+    right: 10%;
 }
-.about .container:nth-child(4) h2 {
-    left: 10%;
+.about .container:nth-child(3) h2 {
+    right: 10%;
 }
 
-.container:nth-child(4) .row {
+.container:nth-child(3) .row {
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -51,26 +51,19 @@
 /*}*/
 
 @media (max-width: 1500px) {
-    .about .container:nth-child(4) {
+    .about .container:nth-child(3) {
         height: 95vh;
     }
 
-    .about .container:nth-child(4) h2 {
-        left: 10%;
+    .about .container:nth-child(3) h2 {
+        right: 10%;
     }
 
-    .about .container:nth-child(4) h4 {
-        left: 10%;
+    .about .container:nth-child(3) h4 {
+        right: 10%;
     }
 
-    .about .container:nth-child(4) h4 {
-        left: 10%;
-    }
-    .about .container:nth-child(4) h2 {
-        left: 10%;
-    }
-
-    .container:nth-child(4) .row {
+    .container:nth-child(3) .row {
         flex-direction: row;
         top: 40%;
         left: 15%;
@@ -105,31 +98,23 @@
 }
 
 @media (max-width: 1024px) {
-    .about .container:nth-child(4) {
+    .about .container:nth-child(3) {
         height: 95vh;
     }
 
-    .about .container:nth-child(4) h2 {
-        left: 10%;
+    .about .container:nth-child(3) h2 {
+        right: 10%;
     }
 
-    .about .container:nth-child(4) h4 {
-        left: 10%;
+    .about .container:nth-child(3) h4 {
+        right: 10%;
     }
 
-    .about .container:nth-child(4) h4 {
-        left: 10%;
-    }
-
-    .about .container:nth-child(4) h2 {
-        left: 10%;
-    }
-
-    .container:nth-child(4) .row {
+    .container:nth-child(3) .row {
         flex-direction: row;
         top: 40%;
-        left: 15%;
-        right: 10%;
+        right: 15%;
+        left: 10%;
         width: 60%;
         height: 50%;
     }
@@ -160,31 +145,24 @@
 }
 
 @media (max-width: 768px) {
-    .about .container:nth-child(4) {
-        height: 65vh;
+    .about .container:nth-child(3) {
+        height: 80vh;
     }
 
-    .about .container:nth-child(4) h2 {
-        left: 10%;
+    .about .container:nth-child(3) h2 {
+        right: 10%;
     }
 
-    .about .container:nth-child(4) h4 {
-        left: 10%;
+    .about .container:nth-child(3) h4 {
+        right: 10%;
     }
 
-    .about .container:nth-child(4) h4 {
-        left: 10%;
-    }
-    .about .container:nth-child(4) h2 {
-        left: 10%;
-    }
-
-    .container:nth-child(4) .row {
+    .container:nth-child(3) .row {
         flex-direction: column;
         top: 30%;
         left: 10%;
         right: 10%;
-        width: 80%;
+        width: 76%;
         height: 50%;
     }
 
@@ -214,28 +192,69 @@
 }
 
 @media (max-width: 425px) {
-    .about .container:nth-child(4) {
+    .about .container:nth-child(3) {
         height: 55vh;
     }
 
-    .about .container:nth-child(4) h2 {
-        left: 10%;
+    .about .container:nth-child(3) h2 {
+        right: 10%;
     }
 
-    .about .container:nth-child(4) h4 {
-        left: 10%;
+    .about .container:nth-child(3) h4 {
+        right: 10%;
     }
 
-    .about .container:nth-child(4) h4 {
-        left: 10%;
-    }
-    .about .container:nth-child(4) h2 {
-        left: 10%;
-    }
-
-    .container:nth-child(4) .row {
+    .container:nth-child(3) .row {
         flex-direction: column;
         top: 30%;
+        left: 10%;
+        right: 10%;
+        width: 75%;
+        height: 50%;
+    }
+
+    .education-block {
+        border-radius: 0;
+        padding: 2% 2% 2% 2%;
+        width: 100%;
+        height: 10%;
+        border: 1px solid #FFA800;
+    }
+
+    .education-block>div>img {
+        width: 10%;
+        height: 100%;
+        top: 0;
+        left: 2%;
+        right: unset;
+        margin: unset;
+    }
+
+    .education-block>a {
+        font-size: 10px;
+        text-align: center;
+        top: 25%;
+        left: 10%;
+        right: 10%;
+    }
+}
+
+@media (max-width: 320px) {
+    .about .container:nth-child(3) {
+        height: 55vh;
+    }
+
+    .about .container:nth-child(3) h2 {
+        right: 10%;
+    }
+
+    .about .container:nth-child(3) h4 {
+        right: 10%;
+    }
+
+    .container:nth-child(3) .row {
+        flex-direction: column;
+        top: 35%;
         left: 10%;
         right: 10%;
         width: 75%;
